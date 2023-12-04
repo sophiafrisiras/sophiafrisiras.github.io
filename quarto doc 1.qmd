@@ -1,0 +1,7 @@
+---
+title: "Quarto Doc 1"
+author: "Sophia Frisiras"
+editor: visual
+---
+
+# Header 1

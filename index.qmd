@@ -1,6 +1,6 @@
 ---
-title: "YOUR NAME"
-about:
+title: "Sophia Frisiras"
+about: "SUNY Geneseo Student"
   template: trestles  # jolla  trestles  solana  marquee  broadside
   image: img/profile.png
   image-width: 15em
@@ -10,9 +10,6 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com
-    - icon: instagram
-      text: Instagram
-      href: https://instagram.com
     - icon: github
       text: GitHub
       href: https://github.com
@@ -21,7 +18,7 @@ about:
       href: https://GITHUB_USERNAME.github.io/resume-example.pdf
     - icon: mailbox
       text: Email
-      href: mailto:YOUR_EMAIL@geneseo.edu
+      href: mailto:saf101@geneseo.edu
 
 ---
 

@@ -4,56 +4,56 @@
     "href": "quarto-template.html",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
     "section": "",
-    "text": "oj &lt;- read_csv('https://bcdanl.github.io/data/dominick_oj.csv')\nnvars &lt;- format(round(ncol(oj), 0), \n                nsmall=0, \n                big.mark=\",\") \nnobs &lt;- format(round(nrow(oj), 0), \n                nsmall=0, \n                big.mark=\",\")\nThe number of variables is 4; the number of observations is 28,947.\nRoses are red\nviolets are blue."
+    "text": "MARK DOWN BASICS\nitalics, bold, bold italics"
   },
   {
     "objectID": "quarto-template.html#data-summary",
     "href": "quarto-template.html#data-summary",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
-    "section": "2.1 Data Summary",
-    "text": "2.1 Data Summary\n\nSummary statistics (Use skimr::skim())"
+    "section": "3.1 Data Summary",
+    "text": "3.1 Data Summary\n\nSummary statistics (Use skimr::skim())"
   },
   {
     "objectID": "quarto-template.html#data-visualization",
     "href": "quarto-template.html#data-visualization",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
-    "section": "2.2 Data Visualization",
-    "text": "2.2 Data Visualization\n\noj %&gt;% \n  ggplot(aes(x = log(sales), \n             y = log(price),\n             color = brand)) +\n  geom_point(alpha = .1) +\n  geom_smooth(method = lm, se = F) +\n  facet_wrap(.~ad) +\n  theme_bw() +\n  theme(legend.position = 'top')"
+    "section": "3.2 Data Visualization",
+    "text": "3.2 Data Visualization\n\noj %&gt;% \n  ggplot(aes(x = log(sales), \n             y = log(price),\n             color = brand)) +\n  geom_point(alpha = .1) +\n  geom_smooth(method = lm, se = F) +\n  facet_wrap(.~ad) +\n  theme_bw() +\n  theme(legend.position = 'top')"
   },
   {
     "objectID": "quarto-template.html#data-transformation",
     "href": "quarto-template.html#data-transformation",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
-    "section": "2.3 Data Transformation",
-    "text": "2.3 Data Transformation\n\nob_sum1 &lt;- oj %&gt;% \n  group_by(brand, ad) %&gt;% \n  summarise(sales_tot = sum(sales, na.rm = T),\n            price_mean = round(mean(price, na.rm = T), 2))"
+    "section": "3.3 Data Transformation",
+    "text": "3.3 Data Transformation\n\nob_sum1 &lt;- oj %&gt;% \n  group_by(brand, ad) %&gt;% \n  summarise(sales_tot = sum(sales, na.rm = T),\n            price_mean = round(mean(price, na.rm = T), 2))"
   },
   {
     "objectID": "quarto-template.html#analysis",
     "href": "quarto-template.html#analysis",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
-    "section": "2.4 Analysis",
-    "text": "2.4 Analysis"
+    "section": "3.4 Analysis",
+    "text": "3.4 Analysis"
   },
   {
     "objectID": "quarto-template.html#quotes",
     "href": "quarto-template.html#quotes",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
-    "section": "2.5 Quotes",
-    "text": "2.5 Quotes\n\nQuote with &gt;\n\n\n“The truth is rarely pure and never simple.”\n— Oscar Wilde"
+    "section": "3.5 Quotes",
+    "text": "3.5 Quotes\n\nQuote with &gt;\n\n\n“The truth is rarely pure and never simple.”\n— Oscar Wilde"
   },
   {
     "objectID": "quarto-template.html#inserting-figures",
     "href": "quarto-template.html#inserting-figures",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
-    "section": "2.6 Inserting Figures",
-    "text": "2.6 Inserting Figures\nFor a demonstration of a DANL tiger, see Figure 1.\n\n\n\n\n\nFigure 1: DANL Tiger"
+    "section": "3.6 Inserting Figures",
+    "text": "3.6 Inserting Figures\nFor a demonstration of a DANL tiger, see Figure 1.\n\n\n\n\n\nFigure 1: DANL Tiger"
   },
   {
     "objectID": "quarto-template.html#inserting-a-html-page",
     "href": "quarto-template.html#inserting-a-html-page",
     "title": "DANL 200: Introduction to Data AnalyticsProject",
-    "section": "2.7 Inserting a HTML page",
-    "text": "2.7 Inserting a HTML page"
+    "section": "3.7 Inserting a HTML page",
+    "text": "3.7 Inserting a HTML page"
   },
   {
     "objectID": "posts/welcome/index.html",

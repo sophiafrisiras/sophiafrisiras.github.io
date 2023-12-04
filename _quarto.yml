@@ -1,9 +1,9 @@
 project:
   type: website
-  output-dir: "."
+  output-dir: "Local Directory"
 
 website:
-  title: "Sophia"
+  title: "Sophia Frisiras"
   navbar:
     pinned: true
     left:
@@ -12,13 +12,13 @@ website:
       - text: Blog
         href: blog-listing.qmd
   page-footer: 
-    center: "Powered with GitHub and Quarto<br>© YOUR NAME, 2023"
+    center: "Powered with GitHub and Quarto<br>© Sophia Frisiras, 2023"
 
 format:
   html:
     theme: 
       light: flatly
-      dark: darkly
+      dark: lighty
     mainfont: system-ui; 
     highlight-style: atom-one
     css: styles.css

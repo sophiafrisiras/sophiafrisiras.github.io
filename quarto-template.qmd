@@ -2,12 +2,12 @@
 title: "DANL 200: Introduction to Data Analytics<br>Project"
 subtitle: "Quarto Template<br><br>" 
 author: 
-  - name: Name 1
+  - name: Sophia Frisiras
     affiliations:
-      - name: SUNY Geneseo
-  - name: Name 2
+      - name: Jordan Alfano
+  - name: Jocelyn Matusik
     affiliations:
-      - name: SUNY Geneseo
+      - name: Julia Candee
   - <br>
 date: "`r Sys.Date()`"
 
@@ -37,6 +37,11 @@ library(skimr)
 
 ```
 
+MARK DOWN BASICS
+
+*italics*, **bold**, ***bold italics***
+
+# Header 1
 
 ```{r}
 oj <- read_csv('https://bcdanl.github.io/data/dominick_oj.csv')

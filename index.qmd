@@ -15,7 +15,7 @@ about:
       href: https://sophiafrisiras.github.io/
     - icon: file-earmark-pdf
       text: Resumé
-      href: https://sophiafrisiras.github.io/final_copy_resume.pdf
+      href: https://sophiafrisiras.github.io/Final_Copy_Resume.pdf
     - icon: mailbox
       text: Email
       href: mailto:saf101@geneseo.edu

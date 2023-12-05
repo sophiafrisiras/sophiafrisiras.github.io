@@ -1,6 +1,6 @@
 ---
 title: "Sophia Frisiras"
-about: "SUNY Geneseo Student"
+about:
   template: trestles  # jolla  trestles  solana  marquee  broadside
   image: img/me.jpg
   image-width: 15em
@@ -12,7 +12,7 @@ about: "SUNY Geneseo Student"
       href: https://www.linkedin.com/in/sophia-frisiras-254ba7262/
     - icon: github
       text: GitHub
-      href:https://sophiafrisiras.github.io/
+      href: https://sophiafrisiras.github.io/
     - icon: file-earmark-pdf
       text: Resumé
       href: https://GITHUB_USERNAME.github.io/resume-example.pdf

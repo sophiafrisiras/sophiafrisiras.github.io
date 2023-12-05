@@ -2,17 +2,17 @@
 title: "Sophia Frisiras"
 about: "SUNY Geneseo Student"
   template: trestles  # jolla  trestles  solana  marquee  broadside
-  image: img/profile.png
+  image: img/me.jpg
   image-width: 15em
   image-shape: round # rectangle  round  rounded
   
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/sophia-frisiras-254ba7262/
     - icon: github
       text: GitHub
-      href: https://github.com
+      href:https://sophiafrisiras.github.io/
     - icon: file-earmark-pdf
       text: Resumé
       href: https://GITHUB_USERNAME.github.io/resume-example.pdf
@@ -23,13 +23,17 @@ about: "SUNY Geneseo Student"
 ---
 
 
-Finley Malloc majors in Data Analytics at SUNY Geneseo. When not working on data analytics, Finley enjoys spending time unicycling and playing with her pet iguana.
+Sophia Frisiras majors in Business Administration with a minor in Human Resources, at SUNY Geneseo. When not studying, Sophia enjoys spending time hiking and playing with her dog.
 
 ## Education
 
 State University of New York at Geneseo | Geneseo, NY <br>
-B.S. in Data Analytics | Aug 2022 - May 2026 <br>
-Minor in Business Administration 
+B.S. in Business Administration | January 2023 - May 2025 <br>
+Minor in Human Resources
+
+North Carolina State University | Raleigh, NC <br>
+B.S. in Accounting | Aug 2022 - December 2022 <br>
+ 
 
 ## Experience
 

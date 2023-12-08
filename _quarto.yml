@@ -20,7 +20,7 @@ format:
       light: quartz
       dark: solar
     mainfont: system-ui; 
-    highlight-style: atom-one
+    highlight-style: tango
     css: styles.css
     toc: false
     include-after-body: target_blank.html

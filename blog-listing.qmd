@@ -1,5 +1,5 @@
 ---
-title: "Insightful Analytics<br><br>"
+title: "Sophia's Insightful Analytics"
 listing:
   contents: posts
   type: default

@@ -4,3 +4,213 @@ editor: visual
 ---
 
 <https://github.com/sophiafrisiras/sophiafrisiras.github.io>
+
+# Question 2. NFL in 2022
+
+-   Add a blog post with your answers for Question 2 to your website (`https://YOUR_GITHUB_USERNAME.github.io/`).
+
+    -   Make sure that your blog post for Question 2 includes all the questionnaires and your answers to them.
+
+    -   Make sure that your blog post for Question 2 has a section for each sub-question (e.g., Q2a, Q2b) in Question 2, so that the Table of Contents display the section for each questionnaire.
+
+-   The following is the data.frame for Question 2.
+
+```         
+NFL2022_stuffs <- read_csv('https://bcdanl.github.io/data/NFL2022_stuffs.csv')
+```
+
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| play_id | game_id         | drive   | week    | posteam | qtr     | down    |   |
+|         |                 |         |         |         |         |         |   |
+| \<dbl\> | \<chr\>         | \<dbl\> | \<dbl\> | \<chr\> | \<dbl\> | \<dbl\> |   |
++========:+:================+========:+========:+:========+========:+========:+===+
+| 1       | 2022_01_BAL_NYJ | NA      | 1       | NA      | 1       | NA      |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 43      | 2022_01_BAL_NYJ | 1       | 1       | NYJ     | 1       | NA      |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 68      | 2022_01_BAL_NYJ | 1       | 1       | NYJ     | 1       | 1       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 89      | 2022_01_BAL_NYJ | 1       | 1       | NYJ     | 1       | 1       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 115     | 2022_01_BAL_NYJ | 1       | 1       | NYJ     | 1       | 2       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 136     | 2022_01_BAL_NYJ | 1       | 1       | NYJ     | 1       | 3       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 172     | 2022_01_BAL_NYJ | 1       | 1       | NYJ     | 1       | 4       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 202     | 2022_01_BAL_NYJ | 2       | 1       | BAL     | 1       | 1       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 230     | 2022_01_BAL_NYJ | 2       | 1       | BAL     | 1       | 2       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+| 254     | 2022_01_BAL_NYJ | 2       | 1       | BAL     | 1       | 3       |   |
++---------+-----------------+---------+---------+---------+---------+---------+---+
+
+Next
+
+**1**23456
+
+\...
+
+1000
+
+Previous
+
+1-10 of 10,000 rows \| 1-7 of 10 columns
+
+-   `NFL2022_stuffs` is the data.frame that contains information about NFL games in year 2022, in which the unit of observation is a single play for each drive in a NFL game.
+
+## Variable description
+
+-   `play_id`: Numeric play identifier that when used with `game_id` and `drive` provides the unique identifier for a single play
+
+-   `game_id`: Ten digit identifier for NFL game.
+
+-   `drive`: Numeric drive number in the game.
+
+-   `week`: Season week.
+
+-   `posteam`: String abbreviation for the team with possession.
+
+-   `qtr`: Quarter of the game (5 is overtime).
+
+-   `half_seconds_remaining`: Numeric seconds remaining in the half.
+
+-   `down`: The down for the given play.
+
+    -   Basically you get four attempts (aka downs) to move the ball 10 yards (by either running with it or passing it).
+
+    -   If you make 10 yards then you get another set of four downs.
+
+-   `pass`: Binary indicator if the play was a pass play.
+
+-   `wp`: Estimated winning probability for the `posteam` given the current situation at the start of the given play.
+
+## Q2a.
+
+In data.frame, NFL2022_stuffs, remove observations for which values of `posteam` is missing.
+
+**Answer**:
+
+is.na(posteam)
+
+## Q2b.
+
+-   Summarize the mean value of `pass` for each `posteam` when all the following conditions hold:
+
+    1.  `wp` is greater than 20% and less than 75%;
+
+    2.  `down` is less than or equal to 2; and
+
+    3.  `half_seconds_remaining` is greater than 120.
+
+**Answer**:
+
+## Q2c.
+
+-   Provide both (1) a ggplot code with `geom_point()` using the resulting data.frame in Q2b and (2) a simple comments to describe the mean value of `pass` for each `posteam`.
+
+    -   In the ggplot, reorder the `posteam` categories based on the mean value of `pass` in ascending or in descending order.
+
+**Answer**:
+
+## Q2d.
+
+-   Consider the following data.frame, `NFL2022_epa`:
+
+```         
+NFL2022_epa <- read_csv('https://bcdanl.github.io/data/NFL2022_epa.csv')
+```
+
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| play_id | game_id         | drive   | posteam | receiver   | passer    | epa           |
+|         |                 |         |         |            |           |               |
+| \<dbl\> | \<chr\>         | \<dbl\> | \<chr\> | \<chr\>    | \<chr\>   | \<dbl\>       |
++========:+:================+========:+:========+:===========+:==========+==============:+
+| 43      | 2022_01_BAL_NYJ | 1       | NYJ     | NA         | NA        | -4.435212e-01 |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 68      | 2022_01_BAL_NYJ | 1       | NYJ     | NA         | NA        | 1.468819e+00  |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 89      | 2022_01_BAL_NYJ | 1       | NYJ     | Mi.Carter  | J.Flacco  | -4.921924e-01 |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 115     | 2022_01_BAL_NYJ | 1       | NYJ     | NA         | NA        | -3.259313e-01 |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 136     | 2022_01_BAL_NYJ | 1       | NYJ     | NA         | J.Flacco  | -2.402200e+00 |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 172     | 2022_01_BAL_NYJ | 1       | NYJ     | NA         | NA        | -2.316321e-01 |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 202     | 2022_01_BAL_NYJ | 2       | BAL     | R.Bateman  | L.Jackson | 7.512748e-02  |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 230     | 2022_01_BAL_NYJ | 2       | BAL     | D.Duvernay | L.Jackson | -1.051203e-01 |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 254     | 2022_01_BAL_NYJ | 2       | BAL     | NA         | NA        | 8.950552e-01  |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+| 275     | 2022_01_BAL_NYJ | 2       | BAL     | NA         | NA        | -5.292742e-01 |
++---------+-----------------+---------+---------+------------+-----------+---------------+
+
+Next
+
+**1**23456
+
+\...
+
+1000
+
+Previous
+
+1-10 of 10,000 rows
+
+-   Variable description for `NFL2022_epa`
+
+    -   `play_id`: Numeric play identifier that when used with `game_id` and `drive` provides the unique identifier for a single play
+
+    -   `game_id`: Ten digit identifier for NFL game.
+
+    -   `drive`: Numeric drive number in the game.
+
+    -   `posteam`: String abbreviation for the team with possession.
+
+    -   `passer`: Name of the player who passed a ball to a receiver by initially taking a three-step drop and backpedaling into the pocket to make a pass. (Mostly, they are quarterbacks)
+
+    -   `receiver`: Name of the receiver.
+
+    -   `epa`: Expected points added (EPA) by the `posteam` for the given play.
+
+-   Create the data.frame, `NFL2022_stuffs_EPA`, that includes
+
+    1.  All the variables in the data.frame, `NFL2022_stuffs`;
+
+    2.  The variables, `passer`, `receiver`, and `epa`, from the data.frame, `NFL2022_epa`. by joining the two data.frames.
+
+-   In the resulting data.frame, `NFL2022_stuffs_EPA`, remove observations with `NA` in `passer`.
+
+**Answer**:
+
+## Q2e.
+
+-   Provide both (1) a single ggplot and (2) a simple comment to describe the NFL weekly trend of `week`ly mean value of `epa` for each of the following two passers,
+
+    1.  `"J.Allen"`
+
+    2.  `"P.Mahomes"`
+
+**Answer**:
+
+## Q2f.
+
+Calculate the difference between the mean value of `epa` for `"J.Allen"` the mean value of `epa` for `"P.Mahomes"` for each value of `week`.
+
+**Answer**:
+
+## Q2g.
+
+-   Summarize the resulting data.frame in `Q2d`, with the following four variables:
+
+    -   `posteam`: String abbreviation for the team with possession.
+
+    -   `passer`: Name of the player who passed a ball to a receiver by initially taking a three-step drop, and backpedaling into the pocket to make a pass. (Mostly, they are quarterbacks.)
+
+    -   `mean_epa`: Mean value of `epa` in 2022 for each `passer`
+
+    -   `n_pass`: Number of observations for each `passer`
+
+-   Then find the top 10 NFL `passer`s in 2022 in terms of the mean value of `epa`, conditioning that `n_pass` must be greater than or equal to the third quantile level of `n_pass`.

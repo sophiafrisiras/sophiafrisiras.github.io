@@ -2,9 +2,9 @@
   {
     "listing": "/blog-listing.html",
     "items": [
-      "/posts/beer-markets/beer-markets.html",
-      "/posts/starwars/starwars_df.html",
-      "/posts/post-with-code/index.html",
+      "/posts/beer-markets/spotifiy-all.html",
+      "/posts/restaurants/restaurants.html",
+      "/posts/beer markets/index.html",
       "/posts/welcome/index.html"
     ]
   }

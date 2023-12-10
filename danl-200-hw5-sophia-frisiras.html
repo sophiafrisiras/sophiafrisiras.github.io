@@ -124,8 +124,391 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p><a href="https://github.com/sophiafrisiras/sophiafrisiras.github.io" class="uri">https://github.com/sophiafrisiras/sophiafrisiras.github.io</a></p>
+<section id="question-2.-nfl-in-2022" class="level1">
+<h1>Question 2. NFL in 2022</h1>
+<ul>
+<li><p>Add a blog post with your answers for Question 2 to your website (<code>https://YOUR_GITHUB_USERNAME.github.io/</code>).</p>
+<ul>
+<li><p>Make sure that your blog post for Question 2 includes all the questionnaires and your answers to them.</p></li>
+<li><p>Make sure that your blog post for Question 2 has a section for each sub-question (e.g., Q2a, Q2b) in Question 2, so that the Table of Contents display the section for each questionnaire.</p></li>
+</ul></li>
+<li><p>The following is the data.frame for Question 2.</p></li>
+</ul>
+<pre><code>NFL2022_stuffs &lt;- read_csv('https://bcdanl.github.io/data/NFL2022_stuffs.csv')</code></pre>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 20%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><p>play_id</p>
+<p>&lt;dbl&gt;</p></th>
+<th style="text-align: left;"><p>game_id</p>
+<p>&lt;chr&gt;</p></th>
+<th style="text-align: right;"><p>drive</p>
+<p>&lt;dbl&gt;</p></th>
+<th style="text-align: right;"><p>week</p>
+<p>&lt;dbl&gt;</p></th>
+<th style="text-align: left;"><p>posteam</p>
+<p>&lt;chr&gt;</p></th>
+<th style="text-align: right;"><p>qtr</p>
+<p>&lt;dbl&gt;</p></th>
+<th style="text-align: right;"><p>down</p>
+<p>&lt;dbl&gt;</p></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">NA</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">NA</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">89</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">115</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">136</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">172</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">202</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">BAL</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">230</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">BAL</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">254</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">BAL</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Next</p>
+<p><strong>1</strong>23456</p>
+<p>...</p>
+<p>1000</p>
+<p>Previous</p>
+<p>1-10 of 10,000 rows | 1-7 of 10 columns</p>
+<ul>
+<li><code>NFL2022_stuffs</code> is the data.frame that contains information about NFL games in year 2022, in which the unit of observation is a single play for each drive in a NFL game.</li>
+</ul>
+<section id="variable-description" class="level2">
+<h2 class="anchored" data-anchor-id="variable-description">Variable description</h2>
+<ul>
+<li><p><code>play_id</code>: Numeric play identifier that when used with <code>game_id</code> and <code>drive</code> provides the unique identifier for a single play</p></li>
+<li><p><code>game_id</code>: Ten digit identifier for NFL game.</p></li>
+<li><p><code>drive</code>: Numeric drive number in the game.</p></li>
+<li><p><code>week</code>: Season week.</p></li>
+<li><p><code>posteam</code>: String abbreviation for the team with possession.</p></li>
+<li><p><code>qtr</code>: Quarter of the game (5 is overtime).</p></li>
+<li><p><code>half_seconds_remaining</code>: Numeric seconds remaining in the half.</p></li>
+<li><p><code>down</code>: The down for the given play.</p>
+<ul>
+<li><p>Basically you get four attempts (aka downs) to move the ball 10 yards (by either running with it or passing it).</p></li>
+<li><p>If you make 10 yards then you get another set of four downs.</p></li>
+</ul></li>
+<li><p><code>pass</code>: Binary indicator if the play was a pass play.</p></li>
+<li><p><code>wp</code>: Estimated winning probability for the <code>posteam</code> given the current situation at the start of the given play.</p></li>
+</ul>
+</section>
+<section id="q2a." class="level2">
+<h2 class="anchored" data-anchor-id="q2a.">Q2a.</h2>
+<p>In data.frame, NFL2022_stuffs, remove observations for which values of <code>posteam</code> is missing.</p>
+<p><strong>Answer</strong>:</p>
+<p>is.na(posteam)</p>
+</section>
+<section id="q2b." class="level2">
+<h2 class="anchored" data-anchor-id="q2b.">Q2b.</h2>
+<ul>
+<li><p>Summarize the mean value of <code>pass</code> for each <code>posteam</code> when all the following conditions hold:</p>
+<ol type="1">
+<li><p><code>wp</code> is greater than 20% and less than 75%;</p></li>
+<li><p><code>down</code> is less than or equal to 2; and</p></li>
+<li><p><code>half_seconds_remaining</code> is greater than 120.</p></li>
+</ol></li>
+</ul>
+<p><strong>Answer</strong>:</p>
+</section>
+<section id="q2c." class="level2">
+<h2 class="anchored" data-anchor-id="q2c.">Q2c.</h2>
+<ul>
+<li><p>Provide both (1) a ggplot code with <code>geom_point()</code> using the resulting data.frame in Q2b and (2) a simple comments to describe the mean value of <code>pass</code> for each <code>posteam</code>.</p>
+<ul>
+<li>In the ggplot, reorder the <code>posteam</code> categories based on the mean value of <code>pass</code> in ascending or in descending order.</li>
+</ul></li>
+</ul>
+<p><strong>Answer</strong>:</p>
+</section>
+<section id="q2d." class="level2">
+<h2 class="anchored" data-anchor-id="q2d.">Q2d.</h2>
+<ul>
+<li>Consider the following data.frame, <code>NFL2022_epa</code>:</li>
+</ul>
+<pre><code>NFL2022_epa &lt;- read_csv('https://bcdanl.github.io/data/NFL2022_epa.csv')</code></pre>
+<table class="table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 19%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 12%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;"><p>play_id</p>
+<p>&lt;dbl&gt;</p></th>
+<th style="text-align: left;"><p>game_id</p>
+<p>&lt;chr&gt;</p></th>
+<th style="text-align: right;"><p>drive</p>
+<p>&lt;dbl&gt;</p></th>
+<th style="text-align: left;"><p>posteam</p>
+<p>&lt;chr&gt;</p></th>
+<th style="text-align: left;"><p>receiver</p>
+<p>&lt;chr&gt;</p></th>
+<th style="text-align: left;"><p>passer</p>
+<p>&lt;chr&gt;</p></th>
+<th style="text-align: right;"><p>epa</p>
+<p>&lt;dbl&gt;</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">-4.435212e-01</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">1.468819e+00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">89</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: left;">Mi.Carter</td>
+<td style="text-align: left;">J.Flacco</td>
+<td style="text-align: right;">-4.921924e-01</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">115</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">-3.259313e-01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">136</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">J.Flacco</td>
+<td style="text-align: right;">-2.402200e+00</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">172</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">NYJ</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">-2.316321e-01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">202</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">BAL</td>
+<td style="text-align: left;">R.Bateman</td>
+<td style="text-align: left;">L.Jackson</td>
+<td style="text-align: right;">7.512748e-02</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">230</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">BAL</td>
+<td style="text-align: left;">D.Duvernay</td>
+<td style="text-align: left;">L.Jackson</td>
+<td style="text-align: right;">-1.051203e-01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">254</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">BAL</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">8.950552e-01</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">275</td>
+<td style="text-align: left;">2022_01_BAL_NYJ</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">BAL</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">-5.292742e-01</td>
+</tr>
+</tbody>
+</table>
+<p>Next</p>
+<p><strong>1</strong>23456</p>
+<p>...</p>
+<p>1000</p>
+<p>Previous</p>
+<p>1-10 of 10,000 rows</p>
+<ul>
+<li><p>Variable description for <code>NFL2022_epa</code></p>
+<ul>
+<li><p><code>play_id</code>: Numeric play identifier that when used with <code>game_id</code> and <code>drive</code> provides the unique identifier for a single play</p></li>
+<li><p><code>game_id</code>: Ten digit identifier for NFL game.</p></li>
+<li><p><code>drive</code>: Numeric drive number in the game.</p></li>
+<li><p><code>posteam</code>: String abbreviation for the team with possession.</p></li>
+<li><p><code>passer</code>: Name of the player who passed a ball to a receiver by initially taking a three-step drop and backpedaling into the pocket to make a pass. (Mostly, they are quarterbacks)</p></li>
+<li><p><code>receiver</code>: Name of the receiver.</p></li>
+<li><p><code>epa</code>: Expected points added (EPA) by the <code>posteam</code> for the given play.</p></li>
+</ul></li>
+<li><p>Create the data.frame, <code>NFL2022_stuffs_EPA</code>, that includes</p>
+<ol type="1">
+<li><p>All the variables in the data.frame, <code>NFL2022_stuffs</code>;</p></li>
+<li><p>The variables, <code>passer</code>, <code>receiver</code>, and <code>epa</code>, from the data.frame, <code>NFL2022_epa</code>. by joining the two data.frames.</p></li>
+</ol></li>
+<li><p>In the resulting data.frame, <code>NFL2022_stuffs_EPA</code>, remove observations with <code>NA</code> in <code>passer</code>.</p></li>
+</ul>
+<p><strong>Answer</strong>:</p>
+</section>
+<section id="q2e." class="level2">
+<h2 class="anchored" data-anchor-id="q2e.">Q2e.</h2>
+<ul>
+<li><p>Provide both (1) a single ggplot and (2) a simple comment to describe the NFL weekly trend of <code>week</code>ly mean value of <code>epa</code> for each of the following two passers,</p>
+<ol type="1">
+<li><p><code>"J.Allen"</code></p></li>
+<li><p><code>"P.Mahomes"</code></p></li>
+</ol></li>
+</ul>
+<p><strong>Answer</strong>:</p>
+</section>
+<section id="q2f." class="level2">
+<h2 class="anchored" data-anchor-id="q2f.">Q2f.</h2>
+<p>Calculate the difference between the mean value of <code>epa</code> for <code>"J.Allen"</code> the mean value of <code>epa</code> for <code>"P.Mahomes"</code> for each value of <code>week</code>.</p>
+<p><strong>Answer</strong>:</p>
+</section>
+<section id="q2g." class="level2">
+<h2 class="anchored" data-anchor-id="q2g.">Q2g.</h2>
+<ul>
+<li><p>Summarize the resulting data.frame in <code>Q2d</code>, with the following four variables:</p>
+<ul>
+<li><p><code>posteam</code>: String abbreviation for the team with possession.</p></li>
+<li><p><code>passer</code>: Name of the player who passed a ball to a receiver by initially taking a three-step drop, and backpedaling into the pocket to make a pass. (Mostly, they are quarterbacks.)</p></li>
+<li><p><code>mean_epa</code>: Mean value of <code>epa</code> in 2022 for each <code>passer</code></p></li>
+<li><p><code>n_pass</code>: Number of observations for each <code>passer</code></p></li>
+</ul></li>
+<li><p>Then find the top 10 NFL <code>passer</code>s in 2022 in terms of the mean value of <code>epa</code>, conditioning that <code>n_pass</code> must be greater than or equal to the third quantile level of <code>n_pass</code>.</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script type="text/javascript" src="links.js"></script>

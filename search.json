@@ -84,8 +84,8 @@
     "text": "Let’s analyze the res data:\n\nres &lt;- read_csv(\"https://bcdanl.github.io/data/DOHMH_NYC_Restaurant_Inspection.csv\")\n\nrmarkdown::paged_table(res)"
   },
   {
-    "objectID": "posts/beer markets/index.html",
-    "href": "posts/beer markets/index.html",
+    "objectID": "posts/beer markets/beer-markets.html",
+    "href": "posts/beer markets/beer-markets.html",
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"

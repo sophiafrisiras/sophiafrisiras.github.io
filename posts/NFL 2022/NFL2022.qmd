@@ -3,7 +3,7 @@ title: "NFL 2022"
 author: "Sophia Frisiras"
 date: "2023-12-08"
 categories: [NFL, code, data-analysis]
-image: "music.jpg"
+image: "football.jpg"
 
 execute: 
   warning: false

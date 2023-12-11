@@ -1,16 +1,10 @@
----
-title: "Beer Markets"
+
+title: "NFL 2022"
 author: "Sophia Frisiras"
-date: "2023-10-30"
-categories: [beer, code, analysis]
-image: "beer-markets.jpg"
----
+date: "2023-12-08"
+categories: [NFL, code, data-analysis]
+image: "music.jpg"
 
-This is a post with executable code.
-
-```{r}
-1 + 1
-```
 execute: 
   warning: false
   message: false
@@ -39,8 +33,14 @@ theme_set(theme_ipsum()+
           )
 ```
 
-Let's analyze the `beer markets` data:
+Let's analyze the `NFL2022` data:
 
 ```{r}
-beer_markets <- read_csv("https://bcdanl.github.io/data/beer_markets.csv")
+NFL2022_stuffs <- read_csv("https://bcdanl.github.io/data/NFL2022_stuffs.csv")
+```
+
+
+```{r}
+#| results: asis
+rmarkdown::paged_table(NFL2022_stuffs) 
 ```

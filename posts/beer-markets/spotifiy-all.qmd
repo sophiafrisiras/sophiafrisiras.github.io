@@ -3,7 +3,7 @@ title: "Spotify"
 author: "Sophia Frisiras"
 date: "2023-12-08"
 categories: [spotify, code, data-analysis]
-image: "spotify.jpg"
+image: "music.jpg"
 
 execute: 
   warning: false

@@ -3,7 +3,7 @@ title: "Restaurants"
 author: "Sophia Frisiras"
 date: "2023-12-08"
 categories: [restaurants, code, analysis]
-image: "image.png"
+image: "restaurants.jpg"
 
 execute: 
   warning: false
